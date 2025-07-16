@@ -1,24 +1,7 @@
 import Header from "@/components/layout/Header"
 import "@/styles/globals.css"
 import { Metadata } from "next"
-import { Poppins, Lexend, Roboto_Flex } from "next/font/google"
-
-export const poppins = Poppins({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-poppins",
-})
-
-export const lexend = Lexend({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-lexend",
-})
-
-export const robotoFlex = Roboto_Flex({
-  subsets: ["latin"],
-  variable: "--font-roboto",
-})
+import { poppins, robotoFlex, lexend } from "@/lib/fonts"
 
 export const metadata: Metadata = {
   title: "Haswanth Tamil",
@@ -35,7 +18,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="relative">
+      <body
+        className={`relative ${poppins.variable} ${robotoFlex.variable} ${lexend.variable}`}
+      >
         <Header />
         {children}
       </body>

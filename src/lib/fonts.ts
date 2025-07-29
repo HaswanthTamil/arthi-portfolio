@@ -1,4 +1,9 @@
-import { Poppins, Lexend, Roboto_Flex } from "next/font/google"
+import {
+  Playfair_Display,
+  Poppins,
+  Lexend,
+  Roboto_Flex,
+} from "next/font/google"
 
 export const poppins = Poppins({
   subsets: ["latin"],
@@ -16,4 +21,10 @@ export const lexend = Lexend({
 export const robotoFlex = Roboto_Flex({
   subsets: ["latin"],
   variable: "--font-roboto",
+})
+
+export const playfair = Playfair_Display({
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+  variable: "--font-playfair",
 })

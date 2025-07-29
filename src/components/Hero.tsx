@@ -1,11 +1,13 @@
 import Image from "next/image"
 import heroImage from "@/assets/hero_image.png"
 
+const resume = "/arthi_resume.pdf"
+
 const Hero = () => {
   return (
     <>
-      <div className="w-full flex flex-col lg:flex-row py-10 px-5 md:px-10 gap-y-10">
-        <div className="flex flex-col gap-10">
+      <div className="w-full flex flex-col lg:flex-row lg:jusify-center lg:items-center py-10 px-5 md:px-10 gap-y-10">
+        <div className="flex flex-col gap-10 xl:translate-x-[20%]">
           {/* Intro section */}
           <div className="flex flex-col items-center justify-center text-center py-6">
             <h1 className="text-[5.25rem] font-poppins">ARTHI M</h1>
@@ -21,7 +23,7 @@ const Hero = () => {
         </div>
 
         {/* services */}
-        <div className="flex flex-col py-5 lg:translate-y-[40%]">
+        <div className="flex flex-col py-5 xl:translate-x-[30%] lg:translate-y-[15%]">
           <h2 className="text-2xl lg:text-4xl lg:w-[600px] font-robotoFlex text-center font-semibold py-4">
             UI/UX and Visual Design Services
           </h2>
@@ -33,6 +35,14 @@ const Hero = () => {
               <li>Digital Design</li>
             </div>
           </ul>
+
+          <div className="py-5 w-fit mx-auto">
+            <button className="mx-auto w-fit px-3 py-2 bg-gray-300/70 rounded-full text-black font-poppins font-semibold hover:bg-gray-400/70 hover:rotate-6 transition-all duration-300 ease-in-out">
+              <a href={resume} download>
+                View Resume
+              </a>
+            </button>
+          </div>
         </div>
       </div>
     </>

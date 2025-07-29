@@ -10,45 +10,6 @@
   text-shadow: 5px 5px 1px rgba(250, 250, 250, 0.7);
 }
 
-/* Project Card */
-.card-container {
-  width: 320px;
-  height: 200px;
-  perspective: 1000px;
-  cursor: pointer;
-}
-
-.card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  transition: transform 0.7s;
-  transform-style: preserve-3d;
-}
-
-.card-container:hover .card-inner {
-  transform: rotateY(180deg);
-}
-
-.card-front,
-.card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border-radius: 0.75rem; /* matches Tailwind rounded-xl */
-  backface-visibility: hidden;
-  overflow: hidden;
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-}
-
-.card-front {
-  background-color: #000;
-}
-
-.card-back {
-  transform: rotateY(180deg);
-}
-
 /* glass shine for buttons */
 
 .btn-shine {

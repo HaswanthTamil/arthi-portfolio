@@ -1,6 +1,13 @@
 import "@/styles/globals.css"
 import { Metadata } from "next"
-import { poppins, robotoFlex, lexend, playfair } from "@/lib/fonts"
+import {
+  poppins,
+  robotoFlex,
+  lexend,
+  playfair,
+  magra,
+  cormorant,
+} from "@/lib/fonts"
 
 export const metadata: Metadata = {
   title: "Arthi M",
@@ -18,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.variable} ${robotoFlex.variable} ${lexend.variable} ${playfair.className}`}
+        className={`${poppins.variable} ${robotoFlex.variable} ${lexend.variable} ${playfair.className} ${magra.variable} ${cormorant.className}`}
       >
         {children}
       </body>

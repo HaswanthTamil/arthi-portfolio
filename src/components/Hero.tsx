@@ -6,7 +6,7 @@ const resume = "/arthi_resume.pdf"
 const Hero = () => {
   return (
     <>
-      <div className="w-full flex flex-col lg:flex-row lg:jusify-center lg:items-center py-10 px-5 md:px-10 gap-y-10">
+      <div className="w-full lg:h-min-screen flex flex-col lg:flex-row lg:jusify-center lg:items-center py-10 px-5 md:px-10 gap-y-10">
         <div className="flex flex-col gap-10 xl:translate-x-[20%]">
           {/* Intro section */}
           <div className="flex flex-col items-center justify-center text-center py-6">
@@ -17,7 +17,7 @@ const Hero = () => {
           </div>
 
           {/* Image */}
-          <div className="mx-auto sm:-translate-x-5">
+          <div className="mx-auto sm:-translate-x-5 rounded-xl overflow-hidden">
             <Image src={heroImage} alt="hero image" width={400} height={400} />
           </div>
         </div>
@@ -27,7 +27,7 @@ const Hero = () => {
           <h2 className="text-2xl lg:text-4xl lg:w-[600px] font-robotoFlex text-center font-semibold py-4">
             UI/UX and Visual Design Services
           </h2>
-          <ul className="list-disc list-inside font-playfair font-semibold text-lg lg:text-2xl">
+          <ul className="list-disc list-inside font-cormorant font-semibold text-lg lg:text-2xl">
             <div className="flex flex-col sm:mx-auto w-[100%] sm:w-fit px-10 gap-y-2">
               <li>Web Landing Page Design</li>
               <li>App Interface Design</li>
@@ -45,6 +45,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
+      <div className="bg-black h-[20px] border-b border-gray-200/20 hidden md:block"></div>
     </>
   )
 }

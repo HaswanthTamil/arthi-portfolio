@@ -1,4 +1,5 @@
 import Hero from "@/components/Hero"
+import Philosophy from "@/components/Philosophy"
 
 export default function Home() {
   return (
@@ -6,6 +7,9 @@ export default function Home() {
       <main className="bg-black dark:bg-black text-white dark:text-white">
         <section id="hero">
           <Hero />
+        </section>
+        <section id="philosophy">
+          <Philosophy />
         </section>
       </main>
     </>

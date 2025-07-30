@@ -7,6 +7,7 @@ module.exports = {
         poppins: ["Poppins", "ui-sans-serif", "system-ui"],
         robotoFlex: ["Roboto Flex", "ui-sans-serif", "system-ui"],
         lexend: ["Lexend", "ui-sans-serif", "system-ui"],
+        magra: ["var(--font-migra)"],
       },
       keyframes: {
         scalePulse: {

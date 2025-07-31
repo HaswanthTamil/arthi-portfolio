@@ -27,7 +27,7 @@ const Philosophy = () => {
           alt={"Background decor image"}
           width={200}
           height={50}
-          className="opacity-50"
+          className="opacity-20 md:opacity-50"
         />
       </div>
     </div>

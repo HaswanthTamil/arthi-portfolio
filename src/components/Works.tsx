@@ -17,9 +17,9 @@ const Works = () => {
     <>
       <div className="bg-black flex flex-col xl:flex-row-reverse xl:items-center xl:justify-center px-4 py-10">
         <h3 className="font-bold font-cormorant text-7xl text-center mx-auto pr-10 text-shadow-white">
-          My Work
+          Design Works
         </h3>
-        <div className="flex flex-col md:flex-row gap-8 w-full xl:max-w-[60%] items-center md:justify-around py-8">
+        <div className="flex flex-col md:flex-row gap-8 w-full xl:max-w-[60%] items-center md:justify-evenly py-8">
           {/* Image 1 */}
           <div className="relative group w-fit">
             <Link href={cuisineLink}>

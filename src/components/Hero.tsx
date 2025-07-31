@@ -10,7 +10,9 @@ const Hero = () => {
         <div className="flex flex-col gap-10 xl:translate-x-[20%]">
           {/* Intro section */}
           <div className="flex flex-col items-center justify-center text-center py-6">
-            <h1 className="text-[5.25rem] font-poppins">ARTHI M</h1>
+            <h1 className="text-[5.25rem] font-poppins text-shadow-white">
+              ARTHI M
+            </h1>
             <h2 className="text-2xl font-lexend -mt-2">
               Graphic & UI/UX Designer
             </h2>

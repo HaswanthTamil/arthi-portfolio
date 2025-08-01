@@ -22,7 +22,7 @@ const Posts = () => {
               alt="Social media post for MRM Furnitures"
               width={400}
               height={400}
-              className="rounded-xl"
+              className="rounded-xl opacity-100"
             />
           </div>
 
@@ -33,7 +33,7 @@ const Posts = () => {
               alt="App Layout design"
               width={400}
               height={400}
-              className="rounded-xl"
+              className="rounded-xl opacity-95"
             />
           </div>
 

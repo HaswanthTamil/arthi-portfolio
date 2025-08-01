@@ -10,13 +10,13 @@ const Posters = () => {
         <h3 className="font-bold font-cormorant text-5xl md:text-7xl text-center mx-auto pr-10 text-shadow-white">
           Posters
         </h3>
-        <div className="mx-auto w-full">
+        <div className="mx-auto w-full py-6">
           <Image
             src={poster}
             alt="Poster Work Image"
             width={600}
             height={40}
-            className="mx-auto w-full"
+            className="mx-auto w-full opacity-60"
           />
         </div>
         <span className="text-center md:text-right text-xl md:text-3xl md:ml-auto md:max-w-2xl font-lexend py-3 md:py-8 md:pr-4">

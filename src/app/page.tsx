@@ -2,6 +2,7 @@ import Hero from "@/components/Hero"
 import Philosophy from "@/components/Philosophy"
 import Posters from "@/components/Posters"
 import Posts from "@/components/Posts"
+import Services from "@/components/Services"
 import Works from "@/components/Works"
 
 export default function Home() {
@@ -22,6 +23,9 @@ export default function Home() {
         </section>
         <section id="posters">
           <Posters />
+        </section>
+        <section id="services">
+          <Services />
         </section>
       </main>
     </>

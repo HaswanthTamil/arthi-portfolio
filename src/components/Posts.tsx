@@ -4,7 +4,8 @@ import post1 from "@/assets/works/posts/post1.png"
 import post2 from "@/assets/works/posts/post2.png"
 import post3 from "@/assets/works/posts/post3.png"
 
-import decor from "@/assets/decor/decor-2.png"
+import decor2 from "@/assets/decor/decor2.png"
+import decor3 from "@/assets/decor/decor3.png"
 
 const Posts = () => {
   return (
@@ -50,9 +51,17 @@ const Posts = () => {
       </div>
       <div className="absolute top-1/2 right-0 translate-x-2/3 z-10">
         <Image
-          src={decor}
+          src={decor2}
           alt={"Background decor image"}
           width={200}
+          height={50}
+        />
+      </div>
+      <div className="absolute bottom-0 left-0 -translate-x-1/3 translate-y-10 opacity-40 rotate-90 z-10">
+        <Image
+          src={decor3}
+          alt={"Background decor image"}
+          width={150}
           height={50}
         />
       </div>

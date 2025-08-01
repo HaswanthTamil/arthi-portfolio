@@ -1,3 +1,4 @@
+import Contact from "@/components/Contact"
 import Hero from "@/components/Hero"
 import Philosophy from "@/components/Philosophy"
 import Posters from "@/components/Posters"
@@ -26,6 +27,9 @@ export default function Home() {
         </section>
         <section id="services">
           <Services />
+        </section>
+        <section id="contact">
+          <Contact />
         </section>
       </main>
     </>

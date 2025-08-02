@@ -1,8 +1,10 @@
+"use client"
 import Contact from "@/components/Contact"
 import Hero from "@/components/Hero"
 import Philosophy from "@/components/Philosophy"
 import Posters from "@/components/Posters"
 import Posts from "@/components/Posts"
+import PostsMobile from "@/components/PostsMobile"
 import Services from "@/components/Services"
 import Works from "@/components/Works"
 
@@ -19,8 +21,11 @@ export default function Home() {
         <section id="works">
           <Works />
         </section>
-        <section id="posts">
+        <section id="posts" className="hidden md:block">
           <Posts />
+        </section>
+        <section id="postsmobile" className="md:hidden">
+          <PostsMobile />
         </section>
         <section id="posters">
           <Posters />

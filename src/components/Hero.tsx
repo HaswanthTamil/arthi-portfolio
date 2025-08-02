@@ -1,8 +1,8 @@
-import Image from "next/image"
-import { motion } from "framer-motion"
-import heroImage from "@/assets/hero_image.png"
+import Image from "next/image";
+import { motion } from "framer-motion";
+import heroImage from "@/assets/hero_image.png";
 
-const resume = "/arthi_resume.pdf"
+const resume = "/arthi_resume.pdf";
 
 const Hero = () => {
   return (
@@ -48,7 +48,7 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="flex flex-col py-5 xl:translate-x-[30%] lg:translate-y-[15%]"
         >
-          <h2 className="text-2xl lg:text-4xl lg:w-[600px] font-robotoFlex text-center font-semibold py-4">
+          <h2 className="text-2xl lg:text-4xl lg:w-[600px] font-robotoFlex text-center font-semibold py-4 lg:text-right">
             UI/UX and Visual Design Services
           </h2>
 
@@ -85,7 +85,7 @@ const Hero = () => {
         className="bg-black h-[20px] border-b border-gray-200/20 hidden md:block"
       ></motion.div>
     </>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

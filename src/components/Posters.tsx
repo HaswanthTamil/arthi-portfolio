@@ -1,8 +1,8 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import Image from "next/image"
-import poster from "@/assets/works/poster.png"
+import { motion } from "framer-motion";
+import Image from "next/image";
+import poster from "@/assets/works/poster.png";
 
 const Posters = () => {
   return (
@@ -13,16 +13,6 @@ const Posters = () => {
       viewport={{ once: true, amount: 0.2 }}
       className="w-full flex flex-col bg-black py-10"
     >
-      <motion.h3
-        initial={{ opacity: 0, y: -30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7 }}
-        viewport={{ once: true }}
-        className="font-bold font-cormorant text-5xl md:text-7xl text-center mx-auto pr-10 text-shadow-white"
-      >
-        Posters
-      </motion.h3>
-
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -49,7 +39,7 @@ const Posters = () => {
         Great design starts with understanding the story behind the need.
       </motion.span>
     </motion.div>
-  )
-}
+  );
+};
 
-export default Posters
+export default Posters;

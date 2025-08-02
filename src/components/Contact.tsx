@@ -1,8 +1,8 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import Image from "next/image"
-import illus from "@/assets/illustration.png"
+import { motion } from "framer-motion";
+import Image from "next/image";
+import illus from "@/assets/illustration.png";
 
 const Contact = () => {
   const projectLinks = [
@@ -18,7 +18,7 @@ const Contact = () => {
       label: "PPTs",
       href: "https://www.canva.com/design/DAGClZqf7lo/ugDTrIk9Uo4q52Ac0_GkmQ/edit?utm_content=DAGClZqf7lo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
     },
-  ]
+  ];
 
   return (
     <motion.div
@@ -34,7 +34,7 @@ const Contact = () => {
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-center font-lexend text-xl md:text-3xl"
+          className="text-left font-lexend text-xl md:text-3xl"
         >
           Get In Touch
         </motion.h3>
@@ -84,7 +84,7 @@ const Contact = () => {
         <Image src={illus} alt="Decor Image" width={300} height={40} />
       </motion.div>
     </motion.div>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

@@ -1,8 +1,8 @@
-import Image from "next/image";
-import { motion } from "framer-motion";
-import heroImage from "@/assets/hero_image.png";
+import Image from "next/image"
+import { motion } from "framer-motion"
+import heroImage from "@/assets/hero_image.png"
 
-const resume = "/arthi_resume.pdf";
+const resume = "/arthi_resume.pdf"
 
 const Hero = () => {
   return (
@@ -48,7 +48,7 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="flex flex-col py-5 xl:translate-x-[30%] lg:translate-y-[15%]"
         >
-          <h2 className="text-2xl lg:text-4xl lg:w-[600px] font-robotoFlex text-center font-semibold py-4 lg:text-right">
+          <h2 className="text-2xl lg:text-4xl lg:w-[550px] font-robotoFlex text-center font-semibold py-4 lg:text-right lg:ml-4">
             UI/UX and Visual Design Services
           </h2>
 
@@ -66,7 +66,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
-            className="py-5 w-fit mx-auto"
+            className="py-5 w-fit mx-auto lg:mt-10"
           >
             <button className="mx-auto w-fit px-3 py-2 bg-gray-300/70 rounded-full text-black font-poppins font-semibold hover:bg-gray-400/70 hover:rotate-6 transition-all duration-300 ease-in-out">
               <a href={resume} download>
@@ -85,7 +85,7 @@ const Hero = () => {
         className="bg-black h-[20px] border-b border-gray-200/20 hidden md:block"
       ></motion.div>
     </>
-  );
-};
+  )
+}
 
-export default Hero;
+export default Hero

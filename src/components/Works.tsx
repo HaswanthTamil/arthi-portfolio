@@ -7,17 +7,21 @@ import Link from "next/link"
 import cuisine from "@/assets/works/cuisine.png"
 import nutrition from "@/assets/works/nutrition.png"
 import mrm from "@/assets/works/mrm.png"
+import nexora from "@/assets/works/nexora.jpg"
 
 const cuisineLink =
   "https://www.figma.com/proto/bT8HuN7bpDINcDiTidK1Yj/CaringHandsHub?node-id=0-3"
 const nutritionLink =
   "https://www.figma.com/design/8jtgc7xWkmmZnWCGONapfy/Food-Linker?node-id=0-1&p=f&t=VZfzidNlgNASIrwS-0"
 const mrmLink = "https://mrmfurnitures.com"
+const nexoraLink =
+  "https://www.figma.com/design/t3W8FEKHuUpCTyMnyW0Xwz/NEXORA?node-id=1-12&m=dev&t=a6rKDD9ZC9kA5F9h-1"
 
 const Works = () => {
   const items = [
-    { src: cuisine, link: cuisineLink, label: "Landing page for website" },
+    { src: nexora, link: nexoraLink, label: "Landing page for website" },
     { src: nutrition, link: nutritionLink, label: "App design" },
+    { src: cuisine, link: cuisineLink, label: "Landing page for website" },
     { src: mrm, link: mrmLink, label: "Landing page for website" },
   ]
 
